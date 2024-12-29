@@ -51,6 +51,7 @@ export default async function Home() {
             {session && (
               <div className="mt-8 px-8 py-16 rounded-2xl bg-white/5 backdrop-blur-sm border border-purple-500/20">
                 {/* Document list will be here */}
+                <img src={session?.user.image} alt={session?.user.name} />
               </div>
             )}
 
